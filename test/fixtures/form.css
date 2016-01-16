@@ -1,0 +1,102 @@
+:global {
+  form {
+    position: relative;
+    display: block;
+    padding: 20px;
+  }
+
+  input,
+  textarea,
+  select {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+
+  textarea,
+  select {
+    padding: 9px;
+  }
+
+  textarea {
+    resize: none; /* always use autosize! */
+  }
+
+  input[type="text"],
+  input[type="search"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="date"] {
+    font-size: 16px;
+    line-height: 20px;
+    height: 40px;
+    padding: 9px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* labels should always be clickable */
+
+  label {
+    cursor: pointer;
+  }
+
+  .form-group,
+  .form-input-group,
+  .form-button-group {
+    display: block;
+    padding: 5px;
+  }
+
+  button,
+  .button {
+    display: block;
+    height: 40px;
+    padding: 9px;
+    border: 0;
+    border-radius: 2px;
+  }
+
+  button[type="submit"],
+  .button-submit {
+    background-color: #566ACC;
+    color: #fff;
+  }
+
+  :matches(
+    button,
+    .button
+  )[disabled] {
+    opacity: 0.4;
+  }
+
+  select {
+    appearance: none;
+
+    /* NOTE: you have to set the background image every time */
+    background-position: right 10px center;
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* ERROR STATES */
+
+  /* TODO: only if non-empty */
+  :matches(
+    input,
+    textarea,
+    select
+  ):invalid {
+    border: 1px solid red;
+  }
+}

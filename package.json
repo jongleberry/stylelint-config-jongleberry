@@ -1,0 +1,43 @@
+{
+  "name": "stylelint-config-jongleberry",
+  "description": "my personal css rules",
+  "version": "0.0.0",
+  "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
+  "license": "MIT",
+  "repository": "jonathanong/stylelint-config-jongleberry",
+  "dependencies": {
+    "stylelint-config-standard": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "4",
+    "codecov": "1",
+    "eslint": "1",
+    "eslint-config-jongleberry": "1",
+    "eslint-plugin-react": "3",
+    "eslint-plugin-standard": "1",
+    "ghooks": "1",
+    "mocha": "2",
+    "nyc": "5",
+    "stylelint": "^3.2.3"
+  },
+  "scripts": {
+    "lint": "eslint --cache --cache-location node_modules/.cache/eslint lib test",
+    "test": "mocha --bail",
+    "test-cov": "nyc --cache node_modules/mocha/bin/_mocha && nyc report --reporter=lcov"
+  },
+  "config": {
+    "ghooks": {
+      "pre-push": "npm run lint"
+    }
+  },
+  "keywords": [
+    "stylelint",
+    "style",
+    "lint",
+    "css"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib"
+}
