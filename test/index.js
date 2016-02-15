@@ -13,9 +13,9 @@ fs.readdirSync(fixtures).forEach(file => {
     execFile('./node_modules/.bin/stylelint', [
       '--config', 'lib/index.js',
       path.join(fixtures, file),
-    ], (err, output) => {
-      if (output[0]) console.error(output[0])
-      if (output[1]) console.log(output[1])
+    ], (err, stdout, stderr) => {
+      console.log(stdout)
+      console.log(stderr)
       done(err)
     })
   })
