@@ -12,7 +12,7 @@
     "babel-eslint": "next",
     "codecov": "^1.0.0",
     "eslint": "^2.0.0",
-    "eslint-config-jongleberry": "^1.3.1",
+    "eslint-config-jongleberry": "^1.0.0",
     "eslint-config-standard-jsx": "^1.1.1",
     "eslint-plugin-promise": "^1.0.8",
     "eslint-plugin-react": "^3.0.0",
@@ -23,7 +23,7 @@
     "stylelint": "^4.2.0"
   },
   "scripts": {
-    "lint": "eslint --cache --cache-location node_modules/.cache/eslint lib test",
+    "lint": "eslint --cache --cache-location nodgit pue_modules/.cache/eslint lib test",
     "test": "mocha --bail",
     "test-cov": "nyc --cache node_modules/mocha/bin/_mocha && nyc report --reporter=lcov"
   },
