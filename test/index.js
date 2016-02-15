@@ -11,7 +11,7 @@ fs.readdirSync(fixtures).forEach(file => {
 
   it(`Fixture: ${file}`, done => {
     execFile('./node_modules/.bin/stylelint', [
-      '--config', 'lib/index.js',
+      '--config', './lib/index.js',
       path.join(fixtures, file),
     ], (err, stdout, stderr) => {
       console.log(stdout)
