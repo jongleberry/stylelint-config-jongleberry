@@ -18,7 +18,7 @@
     "ghooks": "^1.0.0",
     "mocha": "^2.0.0",
     "nyc": "^6.0.0",
-    "stylelint": "^4.2.0"
+    "stylelint": "^5.0.0"
   },
   "scripts": {
     "lint": "eslint --cache --cache-location nodgit pue_modules/.cache/eslint lib test",
