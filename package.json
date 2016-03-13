@@ -21,7 +21,7 @@
     "stylelint": "^5.0.1"
   },
   "scripts": {
-    "lint": "eslint --cache --cache-location nodgit pue_modules/.cache/eslint lib test",
+    "lint": "eslint --cache --cache-location node_modules/.cache/eslint lib test",
     "test": "mocha --bail",
     "test-cov": "nyc --cache node_modules/mocha/bin/_mocha && nyc report --reporter=lcov"
   },
