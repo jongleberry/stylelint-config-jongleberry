@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": "jongleberry/stylelint-config-jongleberry",
   "dependencies": {
-    "stylelint-config-standard": "^6.0.0"
+    "stylelint-config-standard": "^7.0.0"
   },
   "devDependencies": {
     "codecov": "^1.0.0",
