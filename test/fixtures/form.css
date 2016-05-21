@@ -100,3 +100,7 @@
     border: 1px solid red;
   }
 }
+
+:local(a) {
+  background-color: red;
+}
