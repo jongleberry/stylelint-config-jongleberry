@@ -69,10 +69,7 @@
     color: #fff;
   }
 
-  :matches(
-    button,
-    .button
-  )[disabled] {
+  :matches(button, .button)[disabled] {
     opacity: 0.4;
   }
 
@@ -92,11 +89,7 @@
   /* ERROR STATES */
 
   /* TODO: only if non-empty */
-  :matches(
-    input,
-    textarea,
-    select
-  ):invalid {
+  :matches(input, textarea, select):invalid {
     border: 1px solid red;
   }
 }
