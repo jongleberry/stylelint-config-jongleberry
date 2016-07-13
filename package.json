@@ -6,14 +6,15 @@
   "license": "MIT",
   "repository": "jongleberry/stylelint-config-jongleberry",
   "dependencies": {
-    "stylelint-config-standard": "^10.0.0"
+    "stylelint": "^7.0.1",
+    "stylelint-config-standard": "^11.0.0"
   },
   "devDependencies": {
     "codecov": "^1.0.0",
     "eslint": "^3.0.1",
-    "eslint-config-jongleberry": "^4.0.0",
+    "eslint-config-jongleberry": "^5.0.2",
     "mocha": "^2.0.0",
-    "nyc": "^6.0.0",
+    "nyc": "^7.0.0",
     "stylelint": "^6.8.0"
   },
   "scripts": {
