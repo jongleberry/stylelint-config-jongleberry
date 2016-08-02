@@ -15,7 +15,7 @@
     "eslint-config-jongleberry": "^5.0.2",
     "mocha": "^3.0.0",
     "nyc": "^7.0.0",
-    "stylelint": "^7.0.2"
+    "stylelint": "^7.1.0"
   },
   "scripts": {
     "lint": "eslint --cache --cache-location node_modules/.cache/eslint lib test",
