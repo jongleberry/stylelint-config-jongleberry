@@ -7,7 +7,7 @@
   "repository": "jongleberry/stylelint-config-jongleberry",
   "dependencies": {
     "stylelint": "^7.0.1",
-    "stylelint-config-standard": "^11.0.0"
+    "stylelint-config-standard": "^13.0.0"
   },
   "devDependencies": {
     "codecov": "^1.0.0",
