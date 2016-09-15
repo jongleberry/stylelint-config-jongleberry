@@ -14,7 +14,7 @@
     "eslint": "^3.0.1",
     "eslint-config-jongleberry": "^5.0.2",
     "mocha": "^3.0.0",
-    "nyc": "^7.0.0",
+    "nyc": "^8.3.0",
     "stylelint": "^7.0.2"
   },
   "scripts": {
