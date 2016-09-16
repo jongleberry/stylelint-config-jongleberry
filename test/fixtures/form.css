@@ -105,3 +105,9 @@
 .something-else {
   composes: something;
 }
+
+.some-class-with-spaces {
+  color: red;
+
+  background-color: blue;
+}
