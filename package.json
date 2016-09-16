@@ -7,18 +7,17 @@
   "repository": "jongleberry/stylelint-config-jongleberry",
   "dependencies": {
     "stylelint": "^7.0.1",
-    "stylelint-config-standard": "^11.0.0"
+    "stylelint-config-standard": "^13.0.0"
   },
   "devDependencies": {
     "codecov": "^1.0.0",
-    "eslint": "^3.0.1",
-    "eslint-config-jongleberry": "^5.0.2",
     "mocha": "^3.0.0",
-    "nyc": "^7.0.0",
+    "nyc": "^8.0.0",
+    "standard": "^8.0.0",
     "stylelint": "^7.0.2"
   },
   "scripts": {
-    "lint": "eslint --cache --cache-location node_modules/.cache/eslint lib test",
+    "lint": "standard --fix",
     "test": "mocha --bail",
     "test-cov": "nyc --cache node_modules/mocha/bin/_mocha && nyc report --reporter=lcov"
   },
@@ -31,5 +30,10 @@
   "files": [
     "lib"
   ],
-  "main": "lib"
+  "main": "lib",
+  "nyc": {
+    "exclude": [
+      "node_modules"
+    ]
+  }
 }

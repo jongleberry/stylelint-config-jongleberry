@@ -1,5 +1,8 @@
 'use strict'
 
+/* eslint-env mocha */
+/* eslint no-console: 0 */
+
 const execFile = require('child_process').execFile
 const path = require('path')
 const fs = require('fs')
@@ -12,7 +15,7 @@ fs.readdirSync(fixtures).forEach(file => {
   it(`Fixture: ${file}`, done => {
     execFile('./node_modules/.bin/stylelint', [
       '--config', './lib/index.js',
-      path.join(fixtures, file),
+      path.join(fixtures, file)
     ], (err, stdout, stderr) => {
       console.log(stdout)
       console.log(stderr)
