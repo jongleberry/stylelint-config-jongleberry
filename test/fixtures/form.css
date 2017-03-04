@@ -114,4 +114,6 @@
 
 .background {
   backdrop-filter: blur(10px);
+
+  background: url(https://something.svg);
 }
