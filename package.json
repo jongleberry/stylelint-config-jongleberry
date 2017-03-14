@@ -10,7 +10,7 @@
     "stylelint-config-standard": "^16.0.0"
   },
   "devDependencies": {
-    "codecov": "^1.0.0",
+    "codecov": "^2.0.1",
     "mocha": "^3.0.0",
     "nyc": "^10.0.0",
     "standard": "^9.0.0"
